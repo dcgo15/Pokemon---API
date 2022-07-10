@@ -10,6 +10,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700;800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<a href="https://fontmeme.com/pt/fonte-de-pokemon/"><img src="https://fontmeme.com/permalink/220710/4a9dd2b06c138d11128e73367511955d.png" alt="fonte-de-pokemon" border="0"></a>
@@ -17,6 +18,7 @@
 	<div class="forms">
 		<form id="f">
 			<h4>Pesquise o nome</h4>
+			<h5>O nome deve ser escrito em minusculo</h5>
 			<input id="name" type="name" placeholder="Nome" required/><br>
 			<h4>Or Id</h4>
 			<input type="id" placeholder="Id"><br>
@@ -43,7 +45,7 @@
             //console.log("Esta é a função");
             //console.log(data.Title);
             document.getElementById("name2").innerHTML = data.name;
-            imagem.src = data.sprites.back_default;
+            imagem.src = data.sprites.front_default;
         });
 
     e.preventDefault();
